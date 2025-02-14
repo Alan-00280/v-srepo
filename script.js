@@ -45,6 +45,8 @@ Di dalamnya<br>
 Kita usahakan rumah itu<br>
 `;
 
+const beuText = `Aku Sayang Kamu 💕`;
+
 function fun1() {
     document.querySelector('#main-img').classList.replace('normal', 'small');
     document.querySelector('.reg-text').classList.add('hide');
@@ -52,7 +54,13 @@ function fun1() {
     `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1x9jnpPOAMSrr7DuIG5jMl?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="song"></iframe>
     <p class="lyric-text">${lyrics}</p>
     <button class="button-lyric" onclick="fun2()">hide</button>
+    <p class="beu-text">${beuText}</p>
     <a class="button-2" href="./index.html">Back</a>`;
+}
+
+function fun2() {
+    document.querySelector('.lyric-text').classList.toggle('hide');
+    document.querySelector('.button-lyric').innerHTML = document.querySelector('.button-lyric').textContent === 'hide' ? 'show' : 'hide';
 }
 
 document.querySelector('.button').addEventListener(

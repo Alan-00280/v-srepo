@@ -10,6 +10,9 @@ body {
     justify-content: center;
     background: url('./img/ea2d2780557ea371b9f386c5e3ea4b57.jpg') no-repeat center center /cover;
 }
+.hide {
+    display: none; 
+}
 .container {
     display: flex;
     justify-content: center;
@@ -30,7 +33,7 @@ body {
     z-index: 1;
 
     border: 2px solid rgb(255, 73, 103);
-    transition: 0.3s;
+    
 }
 
 .card h1{
@@ -49,10 +52,6 @@ body {
 #main-img{
     transform: translateY(20px);
     z-index: 0;
-}
-
-.hide {
-    display: none; 
 }
 
 
@@ -111,10 +110,21 @@ body {
     color: white;
     cursor: pointer;
     transition: 0.1s;
+    margin: 10px auto;
+    width: 150px;
 }
 .button-lyric:hover{
     background: rgb(202, 11, 43);
 }
 .button-lyric:active{
     transform: scale(0.99);
+}
+
+.beu-text{
+    font-family: 'Caveat', serif;
+    color: black;
+    font-size: 1rem;
+    -webkit-text-stroke: none;
+    text-align: left;
+    margin-top: 10px;
 }
