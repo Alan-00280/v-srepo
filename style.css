@@ -22,7 +22,8 @@ body {
     background-color: rgb(255, 255, 255);
     padding: 20px 20px;
     max-width: 40vw;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
 
     color: rgb(250, 213, 213);
@@ -36,11 +37,23 @@ body {
     -webkit-text-stroke: 0.5px rgb(255, 83, 112);
 }
 
-#main-img{
+.small{
+    width: 150px;
+    transition: 0.3s;
+}
+.normal{
     width: 250px;
+    transition: 0.3s;
+}
+#main-img{
     transform: translateY(20px);
     z-index: 0;
 }
+
+.hide {
+    display: none; 
+}
+
 
 .button, .button-2{
     font-family: sans-serif;
@@ -73,4 +86,28 @@ body {
     color: black;
     -webkit-text-stroke: none;
     text-align: left;
+}
+
+.lyric-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: smaller;
+    -webkit-text-stroke: none;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: scroll;
+    scrollbar-width:thin;
+    margin-block: 10px;
+}
+
+.button-lyric{
+    border: none;
+    padding: 2px;
+    border-radius: 5px;
+    background: rgb(255, 153, 170);
+    color: white;
+    cursor: pointer;
+}
+.button-lyric:hover{
+    background: rgb(255, 73, 103);
 }
