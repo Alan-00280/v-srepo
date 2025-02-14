@@ -35,15 +35,15 @@ body {
 
 .card h1{
     -webkit-text-stroke: 0.5px rgb(255, 83, 112);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .small{
-    width: 150px;
+    width: 100px;
     transition: 0.3s;
 }
 .normal{
-    width: 250px;
+    width: 200px;
     transition: 0.3s;
 }
 #main-img{
@@ -87,7 +87,7 @@ body {
     color: black;
     -webkit-text-stroke: none;
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .lyric-text {
@@ -100,7 +100,7 @@ body {
     overflow-y: scroll;
     scrollbar-width:thin;
     margin-block: 10px;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 .button-lyric{
