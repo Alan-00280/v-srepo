@@ -21,7 +21,7 @@ body {
 .card {
     background-color: rgb(255, 255, 255);
     padding: 20px 20px;
-    max-width: 40vw;
+    max-width: 80vw;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -35,6 +35,7 @@ body {
 
 .card h1{
     -webkit-text-stroke: 0.5px rgb(255, 83, 112);
+    font-size: 2rem;
 }
 
 .small{
@@ -57,7 +58,7 @@ body {
 
 .button, .button-2{
     font-family: sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     background-color: rgb(255, 73, 103);
     color: white;
     padding: 10px 20px;
@@ -78,7 +79,7 @@ body {
     transform: scale(0.9);
 }
 .button:hover, .button-2:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .reg-text {
@@ -86,6 +87,7 @@ body {
     color: black;
     -webkit-text-stroke: none;
     text-align: left;
+    font-size: 1.1rem;
 }
 
 .lyric-text {
@@ -98,16 +100,21 @@ body {
     overflow-y: scroll;
     scrollbar-width:thin;
     margin-block: 10px;
+    font-size: 1rem;
 }
 
 .button-lyric{
     border: none;
     padding: 2px;
     border-radius: 5px;
-    background: rgb(255, 153, 170);
+    background: rgb(255, 45, 80);
     color: white;
     cursor: pointer;
+    transition: 0.1s;
 }
 .button-lyric:hover{
-    background: rgb(255, 73, 103);
+    background: rgb(202, 11, 43);
+}
+.button-lyric:active{
+    transform: scale(0.99);
 }
