@@ -29,6 +29,7 @@ body {
     z-index: 1;
 
     border: 2px solid rgb(255, 73, 103);
+    transition: 0.3s;
 }
 
 .card h1{
@@ -56,6 +57,9 @@ body {
 }
 .button-2{
     font-size: 15px;
+    display: block;
+    max-width: 100px;
+    margin: 20px auto 0;
 }
 .button:active, .button-2:active {
     transform: scale(0.9);
