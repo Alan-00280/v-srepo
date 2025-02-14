@@ -8,6 +8,6 @@ document.querySelector('.button').addEventListener(
     'click', ()=>{
         document.querySelector('.card').innerHTML =
         `<p class="reg-text">${text}</p>
-        <a class="button-2" href="../index.html">Click Me!</a>`;
+        <a class="button-2" href="./index.html">Click Me!</a>`;
     }
 );
