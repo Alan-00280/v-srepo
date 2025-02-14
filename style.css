@@ -1,0 +1,72 @@
+* {
+    font-family: "Chela One";
+    letter-spacing: 0.2rem;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('./img/ea2d2780557ea371b9f386c5e3ea4b57.jpg') no-repeat center center /cover;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: larger;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    max-width: 40vw;
+    text-align: center;
+    border-radius: 10px;
+
+    color: rgb(250, 213, 213);
+    z-index: 1;
+
+    border: 2px solid rgb(255, 73, 103);
+}
+
+.card h1{
+    -webkit-text-stroke: 0.5px rgb(255, 83, 112);
+}
+
+#main-img{
+    width: 250px;
+    transform: translateY(20px);
+    z-index: 0;
+}
+
+.button, .button-2{
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 73, 103);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.button-2{
+    font-size: 15px;
+}
+.button:active, .button-2:active {
+    transform: scale(0.9);
+}
+.button:hover, .button-2:hover{
+    transform: scale(1.2);
+}
+
+.reg-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    -webkit-text-stroke: none;
+    text-align: left;
+}
